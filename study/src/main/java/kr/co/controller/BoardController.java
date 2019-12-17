@@ -24,6 +24,7 @@ public class BoardController {
 	@RequestMapping(value = "/board/writeView", method = RequestMethod.GET)
 	public void writeView() throws Exception{
 		logger.info("writeView");
+		System.out.println("1111");
 	}
 	
 	// 게시판 글 작성
