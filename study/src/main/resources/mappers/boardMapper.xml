@@ -6,12 +6,35 @@
    
    <!-- 게시판 글 작성 -->
    <insert id="insert">
-	  INSERT INTO MP_BOARD(BNO, TITLE, CONTENT, WRITER)
+	  INSERT INTO MP_BOARD(BNO, EMAIL,PASSWORD,TITLE, CONTENT)
 	   					      
-	                 VALUES(    MP_BOARD_SEQ.NEXTVAL 
+	                 VALUES(    MP_BOARD_SEQ.NEXTVAL
+	                 		, #{email}
+	                 		, #{password} 
 	                 		  , #{title}
 	                 		  , #{content}
-	                 		  , #{writer}  )
+	                 		   )
    
    </insert>
+   <!-- 전체 방명록 조회 -->
+   <select id="list" resultType="kr.co.vo.BoardVO">
+	SELECT BNO
+		, EMAIL
+		, TITLE
+		, CONTENT
+		, REGDATE
+		FROM MP_BOARD
+		ORDER BY REGDATE DESC
+	</select>
+	
+   <!-- 게시판 글 작성 bno를 targeting해서 query가 넘어온다-->
+   <select id="read" parameterType="int" resultType="kr.co.vo.BoardVO">
+		SELECT	BNO
+			  , EMAIL
+			  , TITLE
+			  , CONTENT
+			  , REGDATE
+		 FROM MP_BOARD
+		 WHERE BNO = #{bno}
+	</select>
 </mapper>

@@ -5,9 +5,10 @@ import java.util.Date;
 public class BoardVO {
 	
 	private int bno;
+	private String email;
+	private String password;
 	private String title;
 	private String content;
-	private String writer;
 	private Date regdate;
 	public int getBno() {
 		return bno;
@@ -27,11 +28,17 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getWriter() {
-		return writer;
+	public String getEmail() {
+		return email;
 	}
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public Date getRegdate() {
 		return regdate;

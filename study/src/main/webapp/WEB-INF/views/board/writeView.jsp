@@ -22,6 +22,16 @@
 						<tbody>
 							<tr>
 								<td>
+									<label for="email">email</label><input type="text" id="email" name="email" />
+								</td>
+							<tr>
+							<tr>
+								<td>
+									<label for="password">password</label><input type="text" id="password" name="password" />
+								</td>
+							<tr>
+							<tr>
+								<td>
 									<label for="title">제목</label><input type="text" id="title" name="title" />
 								</td>
 							</tr>	
@@ -30,10 +40,6 @@
 									<label for="content">내용</label><textarea id="content" name="content" ></textarea>
 								</td>
 							</tr>
-							<tr>
-								<td>
-									<label for="writer">작성자</label><input type="text" id="writer" name="writer" />
-								</td>
 							<tr>
 								<td>						
 									<button type="submit">작성</button>
