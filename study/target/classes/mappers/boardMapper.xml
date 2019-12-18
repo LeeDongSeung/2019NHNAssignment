@@ -44,8 +44,8 @@
 	 <update id="update" parameterType="kr.co.vo.BoardVO">
 		UPDATE MP_BOARD
 		   SET CONTENT  =   #{content},
-		   		MODIFIEDDATE =CURRENT_TIMESTAMP
-		 WHERE BNO = #{bno} 
+		   		MODIFIEDDATE = CURRENT_TIMESTAMP
+		 WHERE BNO = #{bno} AND PASSWORD = #{password}
 	</update>
 	
 	<!-- 삭제를 처리하기 위한 sql query-->

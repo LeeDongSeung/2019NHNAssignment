@@ -47,8 +47,11 @@
 									<label for="content">내용</label><textarea id="content" name="content"><c:out value="${update.content}" /></textarea>
 								</td>
 							</tr>
-							
-									
+							<tr>
+								<td>
+									<label for="poassword">password</label><textarea id="password" name="password"><c:out value="${update.password}" /></textarea>
+								</td>
+							</tr>
 						</tbody>			
 					</table>
 					<div>

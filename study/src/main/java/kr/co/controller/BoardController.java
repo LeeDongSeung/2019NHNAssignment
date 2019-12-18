@@ -59,7 +59,7 @@ public class BoardController {
 	@RequestMapping(value = "/updateView", method = RequestMethod.GET)
 	public String updateView(BoardVO boardVO, Model model) throws Exception{
 		logger.info("updateView");
-		
+		//update실행!
 		model.addAttribute("update", service.read(boardVO.getBno()));
 		
 		return "board/updateView";

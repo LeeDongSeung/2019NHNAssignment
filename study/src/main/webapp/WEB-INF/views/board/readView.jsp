@@ -11,7 +11,6 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			var formObj = $("form[name='readForm']");
-			
 			// 수정 
 			$(".update_btn").on("click", function(){
 				formObj.attr("action", "/board/updateView");
