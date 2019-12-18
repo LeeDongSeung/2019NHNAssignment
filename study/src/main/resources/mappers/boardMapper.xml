@@ -16,7 +16,7 @@
 	                 		   )
    
    </insert>
-   <!-- 전체 방명록 조회 -->
+   <!-- 전체 방명록 조회 등록시간을 기준으로 내림차순 -->
    <select id="list" resultType="kr.co.vo.BoardVO">
 	SELECT BNO
 		, EMAIL
