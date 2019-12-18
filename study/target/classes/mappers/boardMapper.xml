@@ -47,7 +47,6 @@
 		   		MODIFIEDDATE = CURRENT_TIMESTAMP
 		 WHERE BNO = #{bno} AND PASSWORD = #{password}
 	</update>
-	
 	<!-- 삭제를 처리하기 위한 sql query-->
 	<delete id="delete" parameterType="int">
 		DELETE 
