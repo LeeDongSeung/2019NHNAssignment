@@ -27,6 +27,13 @@
 									<label for="bno">글 번호</label><input type="text" id="bno" name="bno" value="${read.bno}"/>
 								</td>
 							</tr>	
+							
+							<tr>
+								<td>
+									<label for="email">email</label><input type="text" id="email" name="email" value="${read.email}" />
+								</td>
+							</tr>
+							
 							<tr>
 								<td>
 									<label for="title">제목</label><input type="text" id="title" name="title" value="${read.title}"/>
@@ -37,15 +44,17 @@
 									<label for="content">내용</label><textarea id="content" name="content"><c:out value="${read.content}" /></textarea>
 								</td>
 							</tr>
-							<tr>
-								<td>
-									<label for="writer">작성자</label><input type="text" id="writer" name="writer" value="${read.writer}" />
-								</td>
-							</tr>
+							
 							<tr>
 								<td>
 									<label for="regdate">작성날짜</label>
 									<fmt:formatDate value="${read.regdate}" pattern="yyyy-MM-dd-hh-mm-ss"/>					
+								</td>
+							</tr>	
+							<tr>
+								<td>
+									<label for="modifieddate">수정날짜</label>
+									<fmt:formatDate value="${read.modifieddate}" pattern="yyyy-MM-dd-hh-mm-ss"/>					
 								</td>
 							</tr>		
 						</tbody>			

@@ -20,7 +20,7 @@
 			<section id="container">
 				<form role="form" method="post" action="/board/write">
 					<table>
-						<tr><th>번호</th><th>email</th><th>제목</th><th>내용</th><th>등록일</th></tr>
+						<tr><th>번호</th><th>email</th><th>제목</th><th>내용</th><th>등록일</th><th>수정날짜</th></tr>
 						
 						<c:forEach items="${list}" var = "list">
 							<tr>
@@ -32,6 +32,7 @@
 								
 								<td><c:out value="${list.content}" /></td>
 								<td><fmt:formatDate value="${list.regdate}" pattern="yyyy-MM-dd-hh-mm-ss"/></td>
+								<td><fmt:formatDate value="${list.modifieddate}" pattern="yyyy-MM-dd-hh-mm-ss"/></td>
 							</tr>
 						</c:forEach>
 						

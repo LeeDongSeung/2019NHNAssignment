@@ -16,18 +16,6 @@ public class BoardVO {
 	public void setBno(int bno) {
 		this.bno = bno;
 	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
 	public String getEmail() {
 		return email;
 	}
@@ -40,11 +28,30 @@ public class BoardVO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
 	public Date getRegdate() {
 		return regdate;
 	}
 	public void setRegdate(Date regdate) {
 		this.regdate = regdate;
 	}
+	public Date getModifieddate() {
+		return modifieddate;
+	}
+	public void setModifieddate(Date modifieddate) {
+		this.modifieddate = modifieddate;
+	}
+	private Date modifieddate;
 	
 }
