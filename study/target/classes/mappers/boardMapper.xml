@@ -39,4 +39,19 @@
 		 FROM MP_BOARD
 		 WHERE BNO = #{bno}
 	</select>
+	
+	<!-- update를 처리 하기위 sql query-->
+	 <update id="update" parameterType="kr.co.vo.BoardVO">
+		UPDATE MP_BOARD
+		   SET CONTENT  =   #{content},
+		   		MODIFIEDDATE =CURRENT_TIMESTAMP
+		 WHERE BNO = #{bno} 
+	</update>
+	
+	<!-- 삭제를 처리하기 위한 sql query-->
+	<delete id="delete" parameterType="int">
+		DELETE 
+		  FROM MP_BOARD
+		 WHERE BNO = #{bno}
+	</delete>
 </mapper>
