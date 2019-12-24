@@ -34,22 +34,22 @@
 						<tbody>
 							<tr>
 								<td>
-									<label for="email">email</label><input type="text" id="email" name="email" value="${update.email}" readonly="readonly"/>
+									<label for="email">email</label><textarea rows = "1" cols = "40" id="email" name="email"><c:out value="${update.email}" /></textarea>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="title">제목</label><input type="text" id="title" name="title" value="${update.title}"/>
+									<label for="title">제목</label><input style="text-align:center; width:350px; height:50px;" type="text" id="title" name="title" value="${update.title}"/>
 								</td>
 							</tr>	
 							<tr>
 								<td>
-									<label for="content">내용</label><textarea id="content" name="content"><c:out value="${update.content}" /></textarea>
+									<label for="content">내용</label><textarea rows="5"cols="40"id="content" name="content"><c:out value="${update.content}" /></textarea>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="poassword">password</label><textarea id="password" name="password"><c:out value="${update.password}" /></textarea>
+									<label for="poassword">password</label><textarea id="password" name="password" type="password"><c:out value="${update.password}" /></textarea>
 								</td>
 							</tr>
 						</tbody>			

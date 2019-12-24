@@ -45,7 +45,7 @@
 		UPDATE MP_BOARD
 		   SET CONTENT  =   #{content},
 		   		MODIFIEDDATE = CURRENT_TIMESTAMP
-		 WHERE BNO = #{bno} AND PASSWORD = #{password}
+		 WHERE BNO = #{bno} AND PASSWORD = #{password} AND EMAIL = #{email}
 	</update>
 	<!-- 삭제를 처리하기 위한 sql query-->
 	<delete id="delete" parameterType="int">
