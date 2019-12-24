@@ -33,7 +33,7 @@ public class BoardController {
 	public String write(BoardVO boardVO) throws Exception{
 		logger.info("write");
 		
-		service.write(boardVO);
+		service.write(boardVO);s
 		
 		return "redirect:/board/list";
 	}
