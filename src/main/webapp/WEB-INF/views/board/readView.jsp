@@ -67,7 +67,7 @@
 							</tr>	
 							<tr>
 								<td>
-									<label for="content">내용</label><textarea id="content" name="content"><c:out value="${read.content}" /></textarea>
+									<label for="content">내용</label><textarea rows="5" cols="40" id="content" name="content"><c:out value="${read.content}" /></textarea>
 								</td>
 							</tr>
 							

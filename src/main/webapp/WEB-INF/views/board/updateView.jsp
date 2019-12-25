@@ -49,7 +49,7 @@
 							</tr>
 							<tr>
 								<td>
-									<label for="poassword">password</label><textarea id="password" name="password" type="password"><c:out value="${update.password}" /></textarea>
+									<label for="poassword">password</label><input id="password" name="password" type="password"><c:out value="${update.password}" /></textarea>
 								</td>
 							</tr>
 						</tbody>			
