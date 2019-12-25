@@ -32,6 +32,7 @@
 								<td><c:out value="${list.content}" /></td>
 								<td><fmt:formatDate value="${list.regdate}" pattern="yyyy-MM-dd-hh-mm-ss"/></td>
 								<td><fmt:formatDate value="${list.modifieddate}" pattern="yyyy-MM-dd-hh-mm-ss"/></td>
+								
 							</tr>
 						</c:forEach>
 						
