@@ -49,6 +49,7 @@
 			
 			<section id="container">
 				<form name="readForm" role="form" method="post">
+				<!-- 이거 read는 어디서 나온거??? 2019 12 25 궁금증! -->
 					<input type="hidden" id="bno" name="bno" value="${read.bno}" />
 				</form>
 					<table>
