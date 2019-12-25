@@ -12,12 +12,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import kr.co.service.BoardService;
 import kr.co.vo.BoardVO;
 
+import java.util.regex.Pattern;
 @Controller
 @RequestMapping("/board/*")
 public class BoardController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
-	
+	public static boolean isEmail(String email) {
+	        if (email==null) return false;
+	        boolean b = Pattern.matches(
+	            "[\\w\\~\\-\\.]+@[\\w\\~\\-]+(\\.[\\w\\~\\-]+)+", 
+	            email.trim());
+	        return b;
+	   }
 	@Inject
 	BoardService service;
 	
@@ -25,15 +32,18 @@ public class BoardController {
 	@RequestMapping(value = "/board/writeView", method = RequestMethod.GET)
 	public void writeView() throws Exception{
 		logger.info("writeView");
-		
-		
 	}
 	
 	// 게시판 글 작성
 	@RequestMapping(value = "/board/write", method = RequestMethod.POST)
 	public String write(BoardVO boardVO) throws Exception{
 		logger.info("write");
-		service.write(boardVO);
+		if(boardVO.getEmail()==""||boardVO.getPassword()==""||boardVO.getTitle()==""||boardVO.getContent()=="") {
+			return "redirect:/board/list";
+		}
+		if(isEmail(boardVO.getEmail())) {
+			service.write(boardVO);
+		}
 		return "redirect:/board/list";
 	}
 	
