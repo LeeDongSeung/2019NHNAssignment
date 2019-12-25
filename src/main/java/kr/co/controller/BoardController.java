@@ -26,6 +26,7 @@ public class BoardController {
 	public void writeView() throws Exception{
 		logger.info("writeView");
 		
+		
 	}
 	
 	// 게시판 글 작성
@@ -67,9 +68,7 @@ public class BoardController {
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
 	public String update(BoardVO boardVO) throws Exception{
 		logger.info("update");
-		
 		service.update(boardVO);
-		
 		return "redirect:/board/list";
 	}
 
