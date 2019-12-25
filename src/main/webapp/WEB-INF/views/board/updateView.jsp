@@ -26,10 +26,10 @@
 		})
 			
 		function fn_valiChk(){
-			var updateForm = $("form[name='updateForm'] .chk").length;
-			for(var i = 0; i<updateForm; i++){
-				if($(".chk").eq(i).val() == "" || $(".chk").eq(i).val() == null){
-					alert($(".chk").eq(i).attr("title"));
+			var regForm = $("form[name='updateForm'] .chk").length;
+			for(var i = 0; i<regForm; i++){
+				if($("form[name='updateForm'] .chk").eq(i).val() == "" || $("form[name='updateForm'] .chk").eq(i).val() == null){
+					alert($("form[name='updateForm'] .chk").eq(i).attr("title"));
 					return true;
 				}
 			}
@@ -56,22 +56,22 @@
 						<tbody>
 							<tr>
 								<td>
-									<label for="email">email</label><textarea rows = "1" cols = "40" id="email" name="email"><c:out value="${update.email}" class="chk" title="email을 입력하세요" /></textarea>
+									<label for="email">email</label><textarea rows = "1" cols = "40" id="email" name="email"><c:out value="${update.email}" /></textarea>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="title">제목</label><input style="text-align:center; width:350px; height:50px;" type="text" id="title" name="title" value="${update.title} class="chk" title="title을 입력하세요""/>
+									<label for="title">제목</label><input style="text-align:center; width:350px; height:50px;" type="text" id="title" name="title" value="${update.title}" />
 								</td>
 							</tr>	
 							<tr>
 								<td>
-									<label for="content">내용</label><textarea rows="5"cols="40"id="content" name="content"><c:out value="${update.content}" class="chk" title="내용을 입력하세요"/></textarea>
+									<label for="content">내용</label><textarea rows="5"cols="40"id="content" name="content"><c:out value="${update.content}" /></textarea>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="poassword">password</label><input id="password" name="password" type="password"><c:out value="${update.password}" class="chk" title="비밀번호를 입력하세요" /></textarea>
+									<label for="poassword">password</label><input id="password" name="password" type="password" class="chk" title="비밀번호를 입력하세요" /><c:out value="${update.password}" />
 								</td>
 							</tr>
 						</tbody>			
