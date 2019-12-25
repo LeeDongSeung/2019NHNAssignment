@@ -35,7 +35,6 @@
 								
 							</tr>
 						</c:forEach>
-						
 					</table>
 				</form>
 			</section>
