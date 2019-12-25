@@ -18,3 +18,11 @@ travis CI를 통해서 자동으로 통합 배포하는 과정
 - 비밀번호 입력 받아 방명록 글 수정 가능
 - 수정 시 별도 테이블 컬럼에 수정 시각 기록
 - 이메일이 올바른지 서버쪽 클라이언트 쪽 모두에서 체크
+
+### 3.스펙 대로 구현한 image 첨부
+![SPEC6-2](https://user-images.githubusercontent.com/29920013/71439843-70ac0a00-273e-11ea-9d1a-5daa2be9a1bb.PNG)
+![SPEC1](https://user-images.githubusercontent.com/29920013/71439844-70ac0a00-273e-11ea-86b0-9ee3438c387a.PNG)
+![SPEC2,3](https://user-images.githubusercontent.com/29920013/71439845-70ac0a00-273e-11ea-9750-c0050c987bc1.PNG)
+![SPEC4](https://user-images.githubusercontent.com/29920013/71439847-70ac0a00-273e-11ea-8d4e-cf69348ac2fd.PNG)
+![SPEC5](https://user-images.githubusercontent.com/29920013/71439848-7144a080-273e-11ea-89d2-9f4922d3142e.PNG)
+![SPEC6-1](https://user-images.githubusercontent.com/29920013/71439849-7144a080-273e-11ea-9eed-0e4639722c1d.PNG)
