@@ -33,7 +33,6 @@
 											  else{
 												  alert("Nonverified Email Format");
 											  }
-											 
 										}
 									</script>
 								</td>
