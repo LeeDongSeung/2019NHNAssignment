@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 	<head>
-	 	<title>게시판</title>
+	 	<title>게시판</title>	
 	</head>
 	<body>
 		<div id="root">
@@ -19,7 +19,7 @@
 						<tbody>
 							<tr>
 								<td>
-									<label for="email">email</label><input type="text" id="email" name="email" placeholder = "email" />
+									<label for="email">email</label><input type="text" id="email" name="email" placeholder = "email"  />
 									<button type = "button" onclick="verifyEmail()">emailVerification</button>
 									<script>
 										function verifyEmail(){
