@@ -37,9 +37,19 @@
 							</tr>
 						</c:forEach>
 					</table>
+					<!-- <table>
+					<% pageContext.setAttribute("tokens","v1=20&v2=30&op=+&res=50");%>
+						<c:forTokens items="${tokens}" var="item"  delims="&">
+							<li>${item}</li>
+						</c:forTokens>
+					</table>
+					 -->
+					
 				</form>
 			</section>
 			<hr />
 		</div>
+		
 	</body>
+	
 </html>
