@@ -27,7 +27,9 @@ public class BoardController {
 	   }
 	@Inject
 	BoardService service;
-	
+	// 자세히 보면 method가  GET이면 model.addAttribute로 추가하고
+	// method가 POST면 service.write()로 method를 바로 실행시켜서
+	// DB로 접근해서 data를 처리한다!
 	// 게시판 글 작성 화면
 	@RequestMapping(value = "/board/writeView", method = RequestMethod.GET)
 	public void writeView() throws Exception{
