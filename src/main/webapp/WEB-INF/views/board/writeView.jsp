@@ -11,7 +11,7 @@
 		$(document).ready(function(){
 			var formObj = $("form[name='writeForm']");
 			$(".write_btn").on("click", function(){
-				if(fn_valiChk()){
+				if(!fn_valiChk()){
 					return false;
 				}
 				formObj.attr("action", "/board/write");
@@ -21,13 +21,13 @@
 		})
 		function fn_valiChk(){
 			var regForm = $("form[name='writeForm'] .chk").length;
-			
 			for(var i = 0; i<regForm; i++){
 				if($("form[name='writeForm'] .chk").eq(i).val() == "" || $("form[name='writeForm'] .chk").eq(i).val() == null){
 					alert($("form[name='writeForm'] .chk").eq(i).attr("title"));
-					return true;
+					return false;
 				}
 			}
+			return true;
 		}
 	</script>
 	<body>
