@@ -55,6 +55,7 @@ public class BoardController {
 		logger.info("read");
 		//readView.jsp에 있는 read가 바로 이 read다.
 		//model을 만들어놓고 read라는 이름으로 service.read()의 값을 넣는다.
+		//마치 ServletConext에서 setAttribute(키,값);과 같다고 볼 수 있다.
 		model.addAttribute("read", service.read(boardVO.getBno()));
 			
 		return "board/readView";
